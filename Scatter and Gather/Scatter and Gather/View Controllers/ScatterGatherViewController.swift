@@ -126,29 +126,29 @@ class ScatterGatherViewController: UIViewController {
                                 delay: 0,
                                 options: [],
                                 animations: {
-                                    self.lTextLabel.backgroundColor = UIColor(red: CGFloat.random(in: 0...256),
-                                                                              green: CGFloat.random(in: 0...256),
-                                                                              blue: CGFloat.random(in: 0...256),
+                                    self.lTextLabel.backgroundColor = UIColor(red: CGFloat.random(in: 0.00...0.99),
+                                                                              green: CGFloat.random(in: 0.00...0.99),
+                                                                              blue: CGFloat.random(in: 0.00...0.99),
                                                                               alpha: 1)
-                                    self.a1TextLabel.backgroundColor = UIColor(red: CGFloat.random(in: 0...256),
-                                                                              green: CGFloat.random(in: 0...256),
-                                                                              blue: CGFloat.random(in: 0...256),
+                                    self.a1TextLabel.backgroundColor = UIColor(red: CGFloat.random(in: 0.00...0.99),
+                                                                               green: CGFloat.random(in: 0.00...0.99),
+                                                                               blue: CGFloat.random(in: 0.00...0.99),
                                                                               alpha: 1)
-                                    self.mTextLabel.backgroundColor = UIColor(red: CGFloat.random(in: 0...256),
-                                                                              green: CGFloat.random(in: 0...256),
-                                                                              blue: CGFloat.random(in: 0...256),
+                                    self.mTextLabel.backgroundColor = UIColor(red: CGFloat.random(in: 0.00...0.99),
+                                                                              green: CGFloat.random(in: 0.00...0.99),
+                                                                              blue: CGFloat.random(in: 0.00...0.99),
                                                                               alpha: 1)
-                                    self.bTextLabel.backgroundColor = UIColor(red: CGFloat.random(in: 0...256),
-                                                                              green: CGFloat.random(in: 0...256),
-                                                                              blue: CGFloat.random(in: 0...256),
+                                    self.bTextLabel.backgroundColor = UIColor(red: CGFloat.random(in: 0.00...0.99),
+                                                                              green: CGFloat.random(in: 0.00...0.99),
+                                                                              blue: CGFloat.random(in: 0.00...0.99),
                                                                               alpha: 1)
-                                    self.dTextLabel.backgroundColor = UIColor(red: CGFloat.random(in: 0...256),
-                                                                              green: CGFloat.random(in: 0...256),
-                                                                              blue: CGFloat.random(in: 0...256),
+                                    self.dTextLabel.backgroundColor = UIColor(red: CGFloat.random(in: 0.00...0.99),
+                                                                              green: CGFloat.random(in: 0.00...0.99),
+                                                                              blue: CGFloat.random(in: 0.00...0.99),
                                                                               alpha: 1)
-                                    self.a2TextLabel.backgroundColor = UIColor(red: CGFloat.random(in: 0...256),
-                                                                              green: CGFloat.random(in: 0...256),
-                                                                              blue: CGFloat.random(in: 0...256),
+                                    self.a2TextLabel.backgroundColor = UIColor(red: CGFloat.random(in: 0.00...0.99),
+                                                                               green: CGFloat.random(in: 0.00...0.99),
+                                                                              blue: CGFloat.random(in: 0.00...0.99),
                                                                               alpha: 1)
         },
                                 completion: nil)
@@ -156,7 +156,15 @@ class ScatterGatherViewController: UIViewController {
     }
     
     private func gather() {
-        
+        UIView.animate(withDuration: 2) {
+            self.lTextLabel.transform = .identity
+            self.a1TextLabel.transform = .identity
+            self.mTextLabel.transform = .identity
+            self.bTextLabel.transform = .identity
+            self.dTextLabel.transform = .identity
+            self.a2TextLabel.transform = .identity
+            self.lambdaLogoView.transform = .identity
+        }
     }
 
 }

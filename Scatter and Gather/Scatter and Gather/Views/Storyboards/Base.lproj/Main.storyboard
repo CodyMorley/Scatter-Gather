@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fpz-lx-8kf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scatter Gather View Controller-->
+        <scene sceneID="GOH-cn-l41">
+            <objects>
+                <viewController id="O2Q-Ph-DMG" customClass="ScatterGatherViewController" customModule="Scatter_and_Gather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U19-81-zpP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lambda_logo" translatesAutoresizingMaskIntoConstraints="NO" id="2hK-we-CM8">
+                                <rect key="frame" x="44.5" y="285.5" width="325" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="325" id="UZV-fK-cny"/>
+                                    <constraint firstAttribute="width" constant="325" id="WTt-6O-tee"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZr-Vd-oNj">
+                                <rect key="frame" x="18" y="112" width="40" height="64"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvu-Uy-z41">
+                                <rect key="frame" x="145" y="112" width="62.5" height="64"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMi-sN-BDT">
+                                <rect key="frame" x="235" y="112" width="42" height="64"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpM-kr-aEg">
+                                <rect key="frame" x="280" y="112" width="53" height="64"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgI-Qb-dYC">
+                                <rect key="frame" x="349" y="112" width="47" height="64"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9P-46-wUD">
+                                <rect key="frame" x="75" y="112" width="47" height="64"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rZr-Vd-oNj" firstAttribute="top" secondItem="Y9P-46-wUD" secondAttribute="top" id="1LN-Km-2ru"/>
+                            <constraint firstItem="2hK-we-CM8" firstAttribute="centerY" secondItem="U19-81-zpP" secondAttribute="centerY" id="2ao-ZC-qDX"/>
+                            <constraint firstItem="rZr-Vd-oNj" firstAttribute="top" secondItem="SfY-Nk-Nqd" secondAttribute="top" constant="24" id="7lr-lV-z5n"/>
+                            <constraint firstItem="XgI-Qb-dYC" firstAttribute="top" secondItem="rZr-Vd-oNj" secondAttribute="top" id="Bis-fI-zbD"/>
+                            <constraint firstItem="SfY-Nk-Nqd" firstAttribute="trailing" secondItem="XgI-Qb-dYC" secondAttribute="trailing" constant="18" id="Bpz-8x-eJx"/>
+                            <constraint firstItem="Y9P-46-wUD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rZr-Vd-oNj" secondAttribute="trailing" constant="5" id="NTz-8Y-K28"/>
+                            <constraint firstItem="2hK-we-CM8" firstAttribute="centerX" secondItem="U19-81-zpP" secondAttribute="centerX" id="PdT-ae-9aM"/>
+                            <constraint firstItem="fvu-Uy-z41" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Y9P-46-wUD" secondAttribute="trailing" constant="5" id="Snh-06-9FU"/>
+                            <constraint firstItem="CMi-sN-BDT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fvu-Uy-z41" secondAttribute="trailing" constant="5" id="aWg-fm-h59"/>
+                            <constraint firstItem="fvu-Uy-z41" firstAttribute="top" secondItem="rZr-Vd-oNj" secondAttribute="top" id="bNH-1b-HMV"/>
+                            <constraint firstItem="XgI-Qb-dYC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TpM-kr-aEg" secondAttribute="trailing" constant="5" id="cLp-jR-eRw"/>
+                            <constraint firstItem="TpM-kr-aEg" firstAttribute="top" secondItem="rZr-Vd-oNj" secondAttribute="top" id="iKb-Gq-8vw"/>
+                            <constraint firstItem="CMi-sN-BDT" firstAttribute="top" secondItem="rZr-Vd-oNj" secondAttribute="top" id="sMo-GI-Wkg"/>
+                            <constraint firstItem="rZr-Vd-oNj" firstAttribute="leading" secondItem="SfY-Nk-Nqd" secondAttribute="leading" constant="18" id="yNe-aR-dEE"/>
+                            <constraint firstItem="TpM-kr-aEg" firstAttribute="leading" secondItem="CMi-sN-BDT" secondAttribute="trailing" constant="3" id="yub-Dm-dhN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SfY-Nk-Nqd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ra8-gF-Wid">
+                        <barButtonItem key="rightBarButtonItem" title="Toggle" id="PxN-wh-MRt">
+                            <connections>
+                                <action selector="toggleButtonPressed:" destination="O2Q-Ph-DMG" id="jRS-9g-9Rh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="a1TextLabel" destination="Y9P-46-wUD" id="eZd-rV-cns"/>
+                        <outlet property="a2TextLabel" destination="XgI-Qb-dYC" id="Jrq-nm-p1Y"/>
+                        <outlet property="bTextLabel" destination="CMi-sN-BDT" id="NBt-Ck-e7R"/>
+                        <outlet property="dTextLabel" destination="TpM-kr-aEg" id="LDD-bY-L1H"/>
+                        <outlet property="lTextLabel" destination="rZr-Vd-oNj" id="vx9-BS-LZB"/>
+                        <outlet property="lambdaLogoView" destination="2hK-we-CM8" id="yjL-HC-Cdg"/>
+                        <outlet property="mTextLabel" destination="fvu-Uy-z41" id="YtA-ba-rvO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKe-rq-iOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TAE-Mf-i7s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fpz-lx-8kf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pgf-aD-r9B">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="O2Q-Ph-DMG" kind="relationship" relationship="rootViewController" id="poK-Pa-p7i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzP-zG-22U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214.49275362318843" y="154.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lambda_logo" width="2000" height="558"/>
+    </resources>
+</document>
